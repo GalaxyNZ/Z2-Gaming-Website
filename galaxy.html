@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <!-- Store META data, link to spreadsheets and scripts -->
+    <head>
+        <!-- Title of the page -->
+        <title>Z2 | Galaxy</title>
+        
+        <!-- META data of the webpage. Gives search engines and bots information about the page -->
+        <meta name="Author" content="Luke">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		        
+		<!-- External sheets/scripts are linked -->
+		<link rel="stylesheet" href="css/profile.css"> 
+		<link rel="stylesheet" href="css/profile.smaller.css"> 
+		<link rel="stylesheet" href="css/common.css"> 
+		<link rel="stylesheet" href="css/scrollbar.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <!-- Added script in here as calcuations and elements vary between pages -->
+        <script>
+            $(window).scroll(function () {
+                $("#container_top").css("background-position","50% " +  (50-($(this).scrollTop() / 15)) + "%");
+            });
+        </script>
+    </head>
+    
+    <!-- Header + Nav bar of the page -->
+    <body>
+        <header>
+            <nav>
+                <div id="nav_container">
+                    <div id="nav_image">
+                        <img src="img/logo_header.png" height="60px">
+                    </div>
+                    <div id="nav_links">
+                        <ul>
+                            <a href="index.html">
+                                <li id="navtext">
+                                    Home
+                                </li>
+                            </a>
+                            <li id="navtext" style="color: #00ffff; cursor: default;">
+                                Our Players
+                            </li>
+                            <a href="">
+                                <li id="navtext">
+                                    News & Updates
+                                </li>
+                            </a>
+                            <a href="store.html">
+                                <li id="navtext">
+                                    Shop
+                                </li>
+                            </a>
+                            <a href="about.html">
+                                <li id="navtext">
+                                    About
+                                </li>
+                            </a>
+                            <a href="">
+                                <li id="navtext">
+                                    Contact
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Body of the page. Core information and images -->
+        <div id="container_top">
+            <div id="container_info">
+                <div class="nickname">
+                    Galaxy
+                </div>
+                <div class="real_name">
+                    Luke Catherall
+                </div>
+            </div>
+        </div>
+        
+        <div id="container_mid">
+            <div id="container_info">
+                <div class="mid_title">
+                    Info
+                    <hr>
+                </div>
+                <div class="info">
+                    Luke “Galaxy” Catherall is one of the newest players in professional competitive Rocket League scene, and rightly so. He quickly rose through the ranks in the game after carrying over his experience from other MMO's such as Tanki Online, in which he was an elite player and staff member. After being part of Falcons, which was known as the best team in Oceania together with Kyle and Marc, he linked up with CaptainCman and Juicy in a new squad that would go on to win RLCS Season 5.
+                    <br>
+                    <br>
+                    Galaxy plays a relaxed game and loves to wait and pounch on his opponents at unpredictable moments. He often looks to tilt the opposition by stealing boost, bumping goalies and faking out defenders.
+                </div>
+            </div>
+        </div>
+        
+        <div id="hr">
+            <hr>
+        </div>
+        
+        <div id="container_lower">
+            <div id="container_info">
+                <div class="mid_title lower">
+                    Follow
+                    <hr>
+                </div>
+                <div class="info lower_info">
+                    <div id="links">
+                        <div class="social_link"> 
+                            <a href="">
+                            <img src="img/facebook.png">
+                               Facebook
+                            </a>
+                        </div>
+                        <div class="social_link"> 
+                            <a href="">
+                            <img src="img/twitter.png">
+                                Twitter
+                            </a>
+                        </div>
+                        <div class="social_link"> 
+                            <a href="">
+                            <img src="img/instagram.png">
+                                Instagram
+                            </a>
+                        </div>
+                        <div class="social_link"> 
+                            <a href="">
+                            <img src="img/youtube.png">
+                                YouTube
+                            </a>
+                        </div>
+                        <div class="social_link"> 
+                            <a href="">
+                            <img src="img/twitch.png">
+                                Twitch
+                            </a>
+                        </div>
+                        <div class="social_link"> 
+                            <a href="">
+                            <img src="img/steam.png">
+                                Steam
+                            </a>
+                        </div>
+                    </div>    
+                    
+                    <div class="twitch">
+                        <iframe class="embed-responsive-item" src="https://www.twitch.tv/monstercat/embed" frameborder="0" scrolling="no" height="350" width="580">
+                            Your Browser does not support iFrame
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer. Copyright/Legal info and social media links -->
+        <footer>
+            <div id="container_info">
+                <div class="copyright">
+                    <div class="copyright_image">
+                        <img src="img/logo.png" height="100px">
+                    </div>
+                    <div class="copyright_text">
+                        Z2 Esports<br><br>
+                        Copyright Luke Catherall.<br>
+                        All rights reserved. <br>
+                        info@z2esports.com
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <!-- Store META data, link to spreadsheets and scripts -->
+    <head>
+        <!-- Title of the page -->
+        <title>Z2 | Home</title>
+        
+        <!-- META data of the webpage. Gives search engines and bots information about the page -->
+        <meta name="Author" content="Luke">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		        
+		<!-- External sheets/scripts are linked -->
+		<link rel="stylesheet" href="css/home.css"> 
+		<link rel="stylesheet" href="css/common.css"> 
+		<link rel="stylesheet" href="css/scrollbar.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <!-- Added script in here as calcuations and elements vary between pages -->
+        <script>
+            $(window).scroll(function () {
+                $(".image").css("background-position","50% " +  (50-($(this).scrollTop() / 5)) + "%");
+            });
+        </script>
+    </head>
+    
+    <!-- Header + Nav bar of the page -->
+    <body>
+        <header>
+            <nav>
+                <div id="nav_container">
+                    <div id="nav_image">
+                        <img src="img/logo_header.png" height="60px">
+                    </div>
+                    <div id="nav_links">
+                        <ul>
+                            <li id="navtext" style="color: #00ffff; cursor: default;">
+                                Home
+                            </li>
+                            <a href="galaxy.html">
+                                <li id="navtext">
+                                    Our Players
+                                </li>
+                            </a>
+                            <a href="">
+                                <li id="navtext">
+                                    News & Updates
+                                </li>
+                            </a>
+                            <a href="store.html">
+                                <li id="navtext">
+                                    Shop
+                                </li>
+                            </a>
+                            <a href="about.html">
+                                <li id="navtext">
+                                    About
+                                </li>
+                            </a>
+                            <a href="">
+                                <li id="navtext">
+                                    Contact
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        
+        <!-- Body of the page. Core information and images -->
+        <div id="layer1">
+            <a href="galaxy.html">
+                <div id="main_article">
+                    <div class="image main">
+                        <div id="main_title">
+                            Shadow
+                        </div>
+                        <div id="main_sub_title">
+                            Player Profile
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <div id="sub_article_box">
+                <a href="store.html">
+                    <div id="sub_article">
+                        <div class="image top_sub">
+                            <div id="sub_title">
+                                Store
+                            </div>
+                            <div id="sub_sub_title">
+                                Hoodies and Merch
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div id="sub_article">
+                        <div class="image mid_sub">
+                            <div id="sub_title">
+                                Squad News
+                            </div>
+                            <div id="sub_sub_title">
+                                See what's going on
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div id="sub_article">
+                        <div class="image low_sub">
+                            <div id="sub_title">
+                                The Squad
+                            </div>
+                            <div id="sub_sub_title">
+                                Meet Z2's members
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        
+        </div>
+
+        <!-- Footer. Copyright/Legal info and social media links -->
+        <footer>
+            <div id="container_info">
+                <div class="copyright">
+                    <div class="copyright_image">
+                        <img src="img/logo.png" height="50px">
+                    </div>
+                    <div class="copyright_text">
+                        Z2 Esports<br>
+                        Copyright Luke Catherall.<br>
+                        All rights reserved. <br>
+                        info@z2esports.com
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
